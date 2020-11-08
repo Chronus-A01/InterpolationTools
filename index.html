@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Interpolation Tools Created By Chronus A01">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpolation Tools | Chronus-A01</title>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="interpolation-generator">
+        <span class="title"><i class="fas fa-subscript"></i> Interpolation</span>
+        <form class="from-input">
+            <div class="from-quest">
+                <input type="number" id="range-coordinat" placeholder="Coordinate Target" required>
+                <select>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="initial-co">
+                <div class="from-init">
+                    <input type="number" data-corX="x" placeholder="Coordinate X1" required>
+                    <input type="number" data-corY="y" placeholder="Coordinate Y1" required>
+                </div>
+                <div class="from-init">
+                    <input type="number" data-corX="x"  placeholder="Coordinate X2" required>
+                    <input type="number" data-corY="y"  placeholder="Coordinate Y2" required>
+                </div>
+            </div>
+            <input type="submit" value="Generate">
+        </form>
+    </div>
+    <div class="interpolation-result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
